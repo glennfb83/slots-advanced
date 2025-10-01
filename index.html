@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Arcade Slots</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<header class="header">
+<h1>Arcade Slots</h1>
+<div class="balance">Balance: $<span id="balance">0</span></div>
+</header>
+
+
+<main class="main">
+<section class="controls">
+<label>Bet: $<input id="bet" type="number" min="1" value="10"></label>
+<button id="spinBtn">Spin</button>
+<button id="maxBtn">Max</button>
+<a class="store-link" href="store.html">Store</a>
+</section>
+
+
+<section class="slots-area">
+<div id="reels" class="reels">
+<div class="reel" data-index="0">🍒</div>
+<div class="reel" data-index="1">🍋</div>
+<div class="reel" data-index="2">🔔</div>
+</div>
+<div id="message" class="message">Good luck!</div>
+</section>
+
+
+<section class="history">
+<h3>Last result</h3>
+<div id="lastResult">—</div>
+</section>
+</main>
+
+
+<footer class="footer">
+<div>Arcade Casino • Local Save • Cosmetic Skins</div>
+</footer>
+</div>
+
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
